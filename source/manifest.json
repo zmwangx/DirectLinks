@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "DirectLinks",
+  "version": "1.0",
+  "description": "Makes indirect links on Google and Facebook direct.",
+  "author": "Canisbos Computing, repackaged by Zhiming Wang",
+  "homepage_url": "http://github.com/zmwangx/DirectLinks",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["injected.js"]
+    }
+  ],
+  "update_url": "https://raw.githubusercontent.com/zmwangx/DirectLinks/master/dist/updates.xml"
+}
